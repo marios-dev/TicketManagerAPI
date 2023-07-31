@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketManagementAPI", "TicketManagementAPI\TicketManagementAPI.csproj", "{FBC13AF6-30A8-4F79-8C5C-69BE34C7FB8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHooks.API", "WebHooks\WebHooks.API.csproj", "{A3A5A705-7E67-4846-B8FA-4F9AE7676BCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHooks.API", "WebHooks\WebHooks.API.csproj", "{A3A5A705-7E67-4846-B8FA-4F9AE7676BCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

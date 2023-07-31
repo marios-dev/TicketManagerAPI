@@ -5,7 +5,7 @@ namespace TicketManagementAPI.Models.TeamHoodModels.Workspaces
     public class Workspace
     {
         [JsonProperty("id", NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? Id { get; set; }
+        public Guid Id { get; set; }
 
         [JsonProperty("displayId", NullValueHandling = NullValueHandling.Ignore)]
         public string DisplayId { get; set; }

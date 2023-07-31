@@ -1,25 +1,14 @@
 ﻿using Newtonsoft.Json;
-using WebHooks.API.Interfaces;
-namespace WebHooks.API.Models.TeamworkTicket
+using static TicketManagementAPI.TeamworkModels.TicketList;
+
+namespace TicketManagementAPI.Models.TeamHoodModels.TicketList
 {
-    public partial class TicketDTO : IDeserializable<TicketDTO>
+    public partial class TicketDTO
     {
-        [JsonProperty("ticket")]
-        public Ticket Ticket { get; set; }
-
-        [JsonProperty("included")]
+        public Ticket ticket { get; set; }
         public Included? Included { get; set; }
-
-        public TicketDTO Deserialize(string json)
-        {
-            return JsonConvert.DeserializeObject<TicketDTO>(json);
-        }
-
-        public string Serialize()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
     }
+
     public partial class Ticket
     {
         [JsonProperty("id", NullValueHandling = NullValueHandling.Ignore)]
@@ -281,16 +270,7 @@ namespace WebHooks.API.Models.TeamworkTicket
     public partial class Message
     {
         public int ID { get; set; }
-        //public string Type { get; set; }
-        public string HtmlBody { get; set; }
-        public string TextBody { get; set; }
-        public string UpdatedAt { get; set; }
-        public Contact UpdatedBy { get; set; }
-        public string State { get; set; }
-        public bool IsPinned { get; set; }
-        public Status Status { get; set; }
-        public string EditMethod { get; set; }
-
+        public string Type { get; set; }
     }
     public partial class Inbox
     {
@@ -540,7 +520,4 @@ namespace WebHooks.API.Models.TeamworkTicket
         [JsonProperty("type", NullValueHandling = NullValueHandling.Ignore)]
         public string? State { get; set; }
     }
-
-
-
 }
