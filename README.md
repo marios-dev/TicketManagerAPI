@@ -36,13 +36,5 @@ It facilitates seamless communication and synchronization between the two system
 - ASP.NET Core Minimal API (initially)
 - Created with a god class but the initial plan is to do very few things, of course that changed quickly and there was no time from the company so God class it was!
 
-## Setup & Usage
-
-1. Clone this repository.
-2. Configure the DNS endpoint to forward HTTP POST requests from Forward Teamwork.
-3. Update app settings with API credentials for Teamwork and the task management system (teamhood).
-4. Run the app and ensure it listens for incoming webhook events.
-5. Monitor logs for event processing status.
-
 *Created by Mario Syti*  
 *For inquiries, contact: msyti@outlook.com*
